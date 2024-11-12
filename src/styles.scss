@@ -1,8 +1,37 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;    
+@tailwind utilities;   
+
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
 
 body{
     font-family: poppins, sans-serif;
     font-weight: 400;
+}
+
+
+.p-checkbox {
+    // Styles for the checkbox box
+    &-box {
+        border: 1px solid #000;
+        background: #fff !important;
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+    }
+
+    // Styles when checkbox is focused
+    &:not(&-disabled) &-box.p-focus {
+        box-shadow: none !important;
+    }
+
+    // Styles for the checkbox icon
+    &-box .p-checkbox-icon {
+        color: #333;
+        height: 12px;
+        width: 12px;
+    }
 }
